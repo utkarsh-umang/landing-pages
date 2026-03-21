@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>12 Secrets of Innovation and Wealth – Karen Rands</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0d1f3c;
+      --navy-light: #1a2f52;
+      --gold: #c99a2e;
+      --gold-light: #e8b94a;
+      --gold-btn: #d4a72c;
+      --white: #ffffff;
+      --off-white: #f5f3ef;
+      --text-dark: #1a1a2e;
+      --text-muted: #5a5a72;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'DM Sans', sans-serif;
+      background: var(--off-white);
+      color: var(--text-dark);
+    }
+
+    .page {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    /* LEFT */
+    .left {
+      position: relative;
+      overflow: hidden;
+      background: var(--navy);
+    }
+
+    .left img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    /* subtle vignette overlay */
+    .left::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(13,31,60,0.18) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    /* RIGHT */
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 56px;
+      background: var(--white);
+      position: relative;
+    }
+
+    /* decorative accent line */
+    .right::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(180deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+    }
+
+    .content {
+      max-width: 460px;
+      width: 100%;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+      padding: 6px 14px;
+      border: 1px solid var(--gold-light);
+      border-radius: 2px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: clamp(2rem, 3.2vw, 2.8rem);
+      line-height: 1.12;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+
+    h1 span {
+      color: var(--gold);
+    }
+
+    .subtext {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 36px;
+      border-left: 3px solid var(--gold-light);
+      padding-left: 16px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    input[type="email"] {
+      width: 100%;
+      padding: 14px 18px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      border: 1.5px solid #d8d8e8;
+      border-radius: 6px;
+      outline: none;
+      color: var(--text-dark);
+      background: #fafafa;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    input[type="email"]:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(201,154,46,0.12);
+      background: var(--white);
+    }
+
+    input[type="email"]::placeholder {
+      color: #bbb;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 16px 24px;
+      background: var(--gold-btn);
+      color: var(--navy);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 4px 16px rgba(201,154,46,0.28);
+      margin-top: 4px;
+    }
+
+    .btn:hover {
+      background: var(--gold-light);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 22px rgba(201,154,46,0.38);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    .hint {
+      font-size: 12px;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .trust-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid #ebebf0;
+    }
+
+    .trust-icon {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      color: var(--gold);
+    }
+
+    .trust-text {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* fade-in animation */
+    .content > * {
+      opacity: 0;
+      transform: translateY(18px);
+      animation: fadeUp 0.55s ease forwards;
+    }
+    .content > *:nth-child(1) { animation-delay: 0.05s; }
+    .content > *:nth-child(2) { animation-delay: 0.15s; }
+    .content > *:nth-child(3) { animation-delay: 0.25s; }
+    .content > *:nth-child(4) { animation-delay: 0.35s; }
+    .content > *:nth-child(5) { animation-delay: 0.42s; }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .page {
+        grid-template-columns: 1fr;
+        grid-template-rows: 380px auto;
+      }
+      .left { height: 380px; }
+      .right {
+        padding: 40px 28px 48px;
+      }
+      .right::before {
+        width: 100%;
+        height: 4px;
+        top: 0; left: 0;
+        background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- LEFT: book image -->
+    <div class="left">
+      <img
+        src="https://scale-brands.s3.ap-south-1.amazonaws.com/landing-pages/karen-rands/ebook_karen.webp"
+        alt="12 Secrets of Innovation and Wealth by Karen Rands"
+      />
+    </div>
+
+    <!-- RIGHT: form -->
+    <div class="right">
+      <div class="content">
+
+        <span class="eyebrow">Free Ebook</span>
+
+        <h1>
+          Create wealth by owning equity in multiple businesses&hellip;<br/>
+          <span>WITHOUT The Risk</span>
+        </h1>
+
+        <p class="subtext">
+          Karen Rands reveals 12 proven secrets that help everyday investors build lasting wealth through smart equity ownership — no high-risk speculation required.
+        </p>
+
+        <div class="form-group">
+          <label for="email">Your Email Address</label>
+          <input type="email" id="email" placeholder="you@example.com" autocomplete="email"/>
+        </div>
+
+        <button class="btn">Get Access NOW!</button>
+
+        <p class="hint">Let us know where to send it</p>
+
+        <div class="trust-row">
+          <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+          <span class="trust-text">100% free. No credit card needed. We respect your privacy and will never spam you.</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
