@@ -28,9 +28,11 @@
     }
 
     .page {
-      min-height: 100vh;
+      height: 100vh;
+      max-height: 100vh;
       display: grid;
       grid-template-columns: 1fr 1fr;
+      overflow: hidden;
     }
 
     /* LEFT */
@@ -269,10 +271,6 @@
           <span>WITHOUT The Risk</span>
         </h1>
 
-        <p class="subtext">
-          Karen Rands reveals 12 proven secrets that help everyday investors build lasting wealth through smart equity ownership — no high-risk speculation required.
-        </p>
-
         <div class="form-group">
           <label for="email">Your Email Address</label>
           <input type="email" id="email" placeholder="you@example.com" autocomplete="email"/>
@@ -280,14 +278,7 @@
 
         <button class="btn">Get Access NOW!</button>
 
-        <p class="hint">Let us know where to send it</p>
-
-        <div class="trust-row">
-          <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-          </svg>
-          <span class="trust-text">100% free. No credit card needed. We respect your privacy and will never spam you.</span>
-        </div>
+        <p class="hint">(Let us know where to send it)</p>
 
       </div>
     </div>
