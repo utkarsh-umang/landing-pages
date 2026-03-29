@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Checklist | Takk</title>
+<link rel="icon" type="image/x-icon" href="./favicon.ico" />
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#000000",
+              "primary-container": "#012021",
+              "surface-container-highest": "#e4e2e4",
+              "on-secondary-fixed-variant": "#6e3900",
+              "tertiary": "#000000",
+              "on-surface-variant": "#45464d",
+              "surface-container-high": "#eae7e9",
+              "on-error-container": "#93000a",
+              "background": "#fcf8fa",
+              "on-primary-fixed-variant": "#2f4c4c",
+              "inverse-surface": "#303032",
+              "primary-fixed": "#c9e8e9",
+              "surface-bright": "#fcf8fa",
+              "error-container": "#ffdad6",
+              "inverse-on-surface": "#f3f0f2",
+              "surface-container-low": "#f6f3f5",
+              "on-secondary": "#ffffff",
+              "secondary-container": "#fe932c",
+              "surface-container": "#f0edef",
+              "on-tertiary-container": "#607cec",
+              "on-background": "#1b1b1d",
+              "primary-fixed-dim": "#adcccd",
+              "tertiary-container": "#001453",
+              "on-secondary-container": "#663500",
+              "surface-dim": "#dcd9db",
+              "on-tertiary": "#ffffff",
+              "error": "#ba1a1a",
+              "on-tertiary-fixed-variant": "#173bab",
+              "on-surface": "#1b1b1d",
+              "surface": "#fcf8fa",
+              "tertiary-fixed-dim": "#b8c4ff",
+              "inverse-primary": "#adcccd",
+              "outline": "#76777d",
+              "tertiary-fixed": "#dde1ff",
+              "on-primary-container": "#6c898a",
+              "secondary-fixed-dim": "#ffb77d",
+              "surface-container-lowest": "#ffffff",
+              "on-primary": "#ffffff",
+              "secondary-fixed": "#ffdcc3",
+              "outline-variant": "#c6c6cd",
+              "on-error": "#ffffff",
+              "on-primary-fixed": "#012021",
+              "on-secondary-fixed": "#2f1500",
+              "on-tertiary-fixed": "#001453",
+              "secondary": "#904d00",
+              "surface-tint": "#476364",
+              "surface-variant": "#e4e2e4"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Work Sans"],
+              "label": ["Work Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-effect {
+        background: rgba(252, 248, 250, 0.7);
+        backdrop-filter: blur(20px);
+      }
+      .text-shadow-subtle {
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<main>
+<!-- Hero Section: Split Layout -->
+<section class="relative overflow-hidden min-h-[870px] flex items-center">
+<div class="max-w-7xl mx-auto px-8 py-16 w-full grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
+<!-- Left: Visual Element -->
+<div class="relative order-2 md:order-1">
+<div class="relative z-10 rounded-lg overflow-hidden shadow-2xl">
+<img alt="Professional real estate document signing" class="w-full h-[600px] object-cover rounded-lg" data-alt="Close-up of a fountain pen signing a premium real estate contract on a dark marble desk with soft cinematic lighting and shallow depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZbsGaU1-l0cw0IBov9f2eAH1O3LZ4jMgnbS8bX9TXg_ekiVdlQ5c4_czxf1GgFUCX3PcVvbYufvwDahpRyadskHyUr1vGehD8XF3cjIp-5O05_bV9OPpQmfY8dXn_ipd3_3bQ0dJw4E8uVVDK4NAVb6bfYgBCehqG7HYXLmsclJZfrAbPVfvM-gFE91g0NySARLf_YK5StCRZCXeokLlEOpouaRLHF4qGYLTzn1BuGkfDgGr2QapFBL3T46ud8WvFqGojF5ra6yk"/>
+<!-- Floating Checklist UI Overlapping -->
+<div class="absolute top-12 -right-8 glass-effect p-8 rounded-xl shadow-xl max-w-xs border border-white/20 hidden lg:block">
+<p class="font-headline font-bold text-primary mb-4 text-sm tracking-widest uppercase">Deal Checklist</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-xs font-medium text-on-surface-variant">Asset Valuation Verification</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-xs font-medium text-on-surface-variant">Escrow Security Protocols</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-xs font-medium text-on-surface-variant">Zoning &amp; Compliance Audit</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -bottom-6 -left-6 w-64 h-64 bg-primary-container rounded-full opacity-5 -z-10"></div>
+</div>
+<!-- Right: Content & Lead Gen -->
+<div class="order-1 md:order-2 space-y-10">
+<div class="space-y-4">
+<h1 class="text-5xl lg:text-7xl font-headline font-extrabold text-primary leading-[1.1] tracking-tight">
+                            15 Point Checklist <span class="text-on-primary-container">that I've used to close</span> 3000+ Real Estate deals <span class="text-on-primary-container">over 20 years</span>
+</h1>
+<div class="w-24 h-1.5 bg-secondary"></div>
+</div>
+<!-- Lead Generation Form -->
+<div class="bg-surface-container-low p-8 lg:p-10 rounded-xl space-y-6 max-w-lg border border-outline-variant/10">
+<div class="space-y-2">
+<input class="w-full bg-surface-container-highest border-none rounded-lg px-5 py-4 text-on-surface placeholder:text-outline focus:ring-2 focus:ring-secondary transition-all" id="email" placeholder="name@firm.com" type="email"/>
+</div>
+<button class="w-full bg-secondary text-on-secondary font-headline font-bold py-5 px-8 rounded-lg text-lg hover:opacity-90 active:scale-[0.98] transition-all shadow-lg flex justify-center items-center gap-2">
+                            Get Access Now!
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<p class="text-[10px] text-center text-outline uppercase tracking-wider">(Let us know where to send it)</p>
+</div>
+</div>
+</div>
+</section>
+</body></html>
