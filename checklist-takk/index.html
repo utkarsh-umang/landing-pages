@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="light h-screen overflow-hidden" lang="en"><head>
+<html class="light min-h-screen md:h-screen md:overflow-hidden" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Checklist | Takk</title>
@@ -88,12 +88,12 @@
       }
     </style>
 </head>
-<body class="h-full overflow-hidden font-body text-on-surface antialiased">
-<main class="h-full min-h-0">
-<!-- Hero: full-bleed image left, content right — fits in 100vh -->
-<section class="relative flex h-full min-h-0 max-h-full flex-col overflow-hidden md:flex-row">
+<body class="min-h-screen overflow-x-hidden overflow-y-auto font-body text-on-surface antialiased md:h-full md:overflow-hidden">
+<main class="min-h-0 md:h-full md:min-h-0">
+<!-- Hero: mobile = image (desktop left) on top, copy+form (desktop right) below; desktop = side-by-side in 100vh -->
+<section class="relative flex min-h-0 flex-col md:h-full md:max-h-full md:overflow-hidden md:flex-row">
 <!-- Left: edge-to-edge image -->
-<div class="relative order-2 h-[40vh] w-full shrink-0 md:order-1 md:h-full md:min-h-0 md:w-1/2 md:flex-1">
+<div class="relative order-1 h-[40vh] w-full shrink-0 md:order-1 md:h-full md:min-h-0 md:w-1/2 md:flex-1">
 <img alt="Professional real estate document signing" class="absolute inset-0 h-full w-full object-cover" data-alt="Close-up of a fountain pen signing a premium real estate contract on a dark marble desk with soft cinematic lighting and shallow depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZbsGaU1-l0cw0IBov9f2eAH1O3LZ4jMgnbS8bX9TXg_ekiVdlQ5c4_czxf1GgFUCX3PcVvbYufvwDahpRyadskHyUr1vGehD8XF3cjIp-5O05_bV9OPpQmfY8dXn_ipd3_3bQ0dJw4E8uVVDK4NAVb6bfYgBCehqG7HYXLmsclJZfrAbPVfvM-gFE91g0NySARLf_YK5StCRZCXeokLlEOpouaRLHF4qGYLTzn1BuGkfDgGr2QapFBL3T46ud8WvFqGojF5ra6yk"/>
 <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/25 via-transparent to-transparent md:from-black/20"></div>
 <!-- Floating checklist -->
@@ -116,7 +116,7 @@
 </div>
 </div>
 <!-- Right: copy + form -->
-<div class="hero-panel-bg order-1 flex min-h-0 w-full flex-1 flex-col justify-center px-5 py-5 sm:px-8 md:order-2 md:h-full md:w-1/2 md:flex-none md:px-10 md:py-8 lg:px-14 xl:px-16">
+<div class="hero-panel-bg order-2 flex w-full flex-col justify-center px-5 py-8 sm:px-8 md:order-2 md:h-full md:min-h-0 md:w-1/2 md:flex-none md:px-10 md:py-8 lg:px-14 xl:px-16">
 <div class="mx-auto w-full max-w-lg space-y-5 md:space-y-7">
 <div class="space-y-3">
 <h1 class="font-headline text-[1.65rem] font-extrabold leading-[1.12] tracking-tight text-primary sm:text-4xl md:text-4xl lg:text-5xl xl:text-[3.25rem] xl:leading-[1.08]">
